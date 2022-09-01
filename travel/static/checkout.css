@@ -1,0 +1,184 @@
+header{
+   
+    background: url(./images/bg\ \(2\).png) no-repeat center center;
+    background-size: cover;
+    top: -142px;
+    height: 480px;
+    position: relative;
+
+}
+.destination-head{
+  font-size: 50px;
+  position: relative;
+  font-family: 'Poppins';
+  align-items: center;
+  text-align: center;
+  top: 260px;
+  color: #fff;
+}
+*::-webkit-scrollbar {
+    width: 14px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #7a7a7a;
+    border-radius: 15px;
+    border: 3px solid #ffffff;
+  }
+body{
+    overflow-x: hidden;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+}
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+  }
+  
+  .col-25 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+  }
+  
+  .col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+  }
+  
+  .col-75 {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+  }
+  
+  .col-25,
+  .col-50,
+  .col-75 {
+    padding: 0 16px;
+  }
+  
+  .container {
+
+    padding: 5px 20px 15px 20px;
+  
+    border-radius: 3px;
+    top: -84px;
+    position: relative;
+  }
+  
+  input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    background: #c5c5c5;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+input[type="text"]::placeholder, input[type="password"]::placeholder, input[type="email"]::placeholder{
+    color: #373737;
+}
+
+  
+  label {
+    margin-bottom: 10px;
+    display: block;
+    color: #ebebeb;
+    font-family: 'Montserrat';
+    font-weight: 400;
+  }
+  
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+  
+  .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }
+  
+  span.price {
+    float: right;
+    color: #fff;
+    position: relative;
+   
+    font-family: 'Montserrat';
+    position: relative;
+  }
+  
+  #firstNumber{
+    
+    font-size: 18px;
+  }
+  .price{
+    top: -224px;
+    font-size: 30px;
+    left: 982px;
+    position: relative;
+    color: #fff;
+  }
+  .people{
+    position: relative;
+    top: -27px;
+  }
+  .batch{
+    position: relative;
+    top: -19px;
+    left: -22px;
+  }
+  .mode{
+   
+    left: 293px;
+    top: -202px;
+position: relative;
+    font-size: 18px;
+    color: #fff;
+    
+  }
+  .details{
+    position: relative;
+    top: -50px;
+  }
+  
+  #secondnumber{
+    top: -203px;
+    left: -785px;
+    font-size: 18px;
+  }
+  #batch{
+    top: -204px;
+    left: -727px;
+    font-size: 18px;
+  }
+  hr{
+    margin-top: -127px;
+  }
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+  @media (max-width: 800px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .col-25 {
+      margin-bottom: 20px;
+    }
+  }

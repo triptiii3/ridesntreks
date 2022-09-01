@@ -1,0 +1,219 @@
+{% include 'navigation.html'%}
+{% load static %}
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mount Monks</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Poppins:wght@400;500&display=swap"
+  rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+      integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{% static 'tours.css' %}">
+
+<link rel="stylesheet" href="{% static 'media-query3.css' %}">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700&subset=latin-ext" rel="stylesheet">
+
+<header class=" wow slideInDown">
+  <h1 class="destination-head">Weekend Tours</h1>
+  
+  
+
+</header>
+<a href="https://wa.me/919315121881" class="whatsapp_float" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+  
+<div class="side-box">
+    <h2 class="sidebarhead1">Keywords</h2>
+<div class="container-search">
+        
+    <form class="searchInputWrapper" method="get" action="/weekendtours">
+      <input class="searchInput" type="text" name="destinationname" id="search" placeholder='Search'>
+      <i class="searchInputIcon fa fa-search"></i>
+      </input>
+    </div>
+    <h2 class="sidebarhead2">Destinations</h2>
+    <ul>
+        <li class="dest-list"><a href="" class="destinations">Manali</a></li>
+        <li class="dest-list"><a href="" class="destinations">Shimla</a></li>
+        <li class="dest-list"><a href="" class="destinations">Solang valley</a></li>
+        <li class="dest-list"><a href="" class="destinations">Leh</a></li>
+    </ul>
+    
+</div>  
+<section class="tourcards">
+{% for n in weekendData%}
+<figure class="snip1577">
+  <img src="{{n.destination_image.url}}" alt="sample99" />
+  <h1 class="destination-subhead"> {{n.destination}}</h1>
+  <figcaption>
+    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi facilis dicta, itaque vel mollitia consectetur perspiciatis eveniet at labore impedit?</h4>
+   
+  </figcaption>
+  <a href="./weekendtours/{{n.id}}"></a>
+</figure>
+  </div>
+  {%empty%}
+  <h2 class="nodata">No data found</h2>
+  {% endfor %}</section>
+
+  <footer class="footer theme-bg-primary  " id="foot">
+    <div class="container py-5 mb-3 col-md-offset-2">
+     <div class="row" style="margin-left: 20px">
+       <div class="footer-col col-lg-3 contact-info">
+         <h4 class="col-heading">CONTACT INFO
+         </h4>
+         <ul class="contacts">
+            <li class="call">
+                <a href="" class="phone">
+                    <i class="fa fa-phone fa icon"> </i>98111189090
+                  </a>
+               
+            </li>
+            <li class="email">
+                <a href="" class="mail">
+                    <i class="fa fa-envelope fa icon"> </i>mountmonks@gmail.com
+                  </a>
+               
+            </li>
+         </ul>
+         <ul class="social-list">
+           <li class="list-inline-item">
+             <a href="">
+               <i class="fa fa-instagram fa-2x icons"></i>
+             </a>
+   
+           </li>
+           <li class="list-inline-item" >
+             <a href="">
+               <i class="fa fa-twitter fa-2x icons"></i>
+             </a>
+   
+           </li>
+           <li class="list-inline-item">
+             <a href="">
+               <i class="fa fa-facebook fa-2x icons"></i>
+             </a>
+   
+           </li>
+   
+         </ul>
+   
+       </div>
+       <div class="footer-col col-lg-3">
+         <h4 class="col-heading">ABOUT US
+         </h4>
+         <ul>
+           <li class="links" >
+             <a href="" class="link-head">
+              Our Story
+             </a>
+   
+           </li>
+           <li class="links">
+             <a href="" class="link-head">
+              Travel Blogs
+             </a>
+   
+           </li>
+           <li class="links">
+             <a href="" class="link-head">
+               Working with us
+             </a>
+   
+           </li>
+           <li class="links">
+             <a href="" class="link-head">
+               Be our partner
+             </a>
+   
+           </li>
+          
+         </ul>
+   
+       </div>
+       
+       <div class="footer-col col-lg-3">
+         <h4 class="col-heading">SUPPORT
+         </h4>
+         <ul>
+           <li class="links">
+             <a href="" class="link-head">
+               Customer Support
+             </a>
+   
+           </li>
+           <li class="links">
+             <a href="" class="link-head">
+              Privacy & Policy
+             </a>
+   
+           </li>
+           <li class="links">
+             <a href="" class="link-head">
+               Contact Channels
+             </a>
+   
+           </li>
+          
+         </ul>
+   
+       </div>
+       <div class="footer-col col-lg-3">
+         <h4 class="col-heading">PAY SAFELY WITH US
+         </h4>
+         
+         <p class="about-us-para">
+            The payment is encrypted and transmitted securely with an SSL protocol
+         </p>
+         <img src="{% static './images/creditcard-logo.png'%}" class="footerlogo">
+   
+       </div>
+   
+     </div>
+   
+    
+</footer>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="wave">
+  <path fill="#c72d0a" fill-opacity="1" d="M0,224L48,240C96,256,192,288,288,298.7C384,309,480,299,576,282.7C672,267,768,245,864,245.3C960,245,1056,267,1152,261.3C1248,256,1344,224,1392,208L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+</svg>
+
+  
+   
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    $('.alert').alert()
+  })
+</script>

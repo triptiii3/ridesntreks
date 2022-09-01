@@ -1,0 +1,1019 @@
+* {
+	box-sizing: border-box;
+    padding: none;
+    
+    
+}
+
+body{
+height: 704px;
+
+}
+.cards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.card .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -80px;
+  height: 40px;
+}
+
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+
+.title-white {
+  color: white;
+}
+
+.title-black {
+  color: black;
+}
+
+@media all and (max-width: 500px) {
+  .card-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #fbf9fb;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
+}
+body{
+  overflow-x: hidden;
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+}
+.whatsapp_float {
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+        font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+        z-index:1000;
+}
+
+.whatsapp-icon {
+	margin-top:16px;
+}
+/* for mobile */
+@media screen and (max-width: 767px){
+     .whatsapp-icon {
+	 margin-top:10px;
+     }
+    .whatsapp_float {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        right: 10px;
+        font-size: 22px;
+    }
+}
+header{
+   
+    background: url(./images/bg\ \(2\).png) no-repeat center center;
+    
+    top: -95px;
+    height: 485px;
+    position: relative;
+
+}
+.destination-head{
+  font-size: 50px;
+  position: relative;
+  font-family: 'Poppins';
+  align-items: center;
+  text-align: center;
+  top: 196px;
+  color: #fff;
+}
+.destination-subhead{
+  font-size: 20px;
+  position: relative;
+  font-family: 'Poppins';
+  align-items: center;
+  text-align: center;
+  top: -50px;
+    left: -77px;
+
+  color: #fff;
+}
+.explore-dest{
+  font-size: 30px;
+  position: relative;
+  align-items: center;
+  text-align: center;
+  top: 11px;
+  font-weight: 200;
+  color: #373737;
+  font-family: 'Poppins';
+}
+.container-search {
+  height: 24vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+ 
+}
+.sidebarhead1{
+  color: #ffa019;
+  font-size: 25px;
+  font-family: 'Montserrat';
+  top: 38px;
+  font-weight: 600;
+  margin-left: 38px;
+    position: relative;
+}
+.sidebarhead2{
+  color: #ffa019;
+  font-size: 25px;
+  font-family: 'Montserrat';
+  top: -52px;
+  font-weight: 600;
+  margin-left: 38px;
+    position: relative;
+}
+ul,li{
+  text-decoration: none;
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  
+}
+
+.destinations{
+  color: #fff;
+    font-family: 'Poppins';
+    font-size: 18px;
+    top: -30px;
+    margin-left: 13px;
+    position: relative;
+}
+.dest-list{
+  padding: 8px;
+}
+.tourcards{
+  position: relative;
+  left: 500px;
+  bottom: 554px;
+}
+.snip1577 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 10px;
+  
+  width: 290px;
+  color: #fff;
+  text-align: left;
+  font-size: 16px;
+  background: #000;
+}
+
+.snip1577 *,
+.snip1577:before,
+.snip1577:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.snip1577 img {
+  width: 290px;
+  height: 359px;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  vertical-align: top;
+}
+
+.snip1577:before,
+.snip1577:after {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  content: '';
+  background-color: #fff;
+  z-index: 1;
+  opacity: 0;
+}
+
+.snip1577:before {
+  width: 0;
+  height: 1px;
+}
+
+.snip1577:after {
+  height: 0;
+  width: 1px;
+}
+
+.snip1577 figcaption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 15px 20px;
+}
+
+.snip1577 h3,
+.snip1577 h4 {
+  margin: 0;
+  font-size: 1.1em;
+  font-weight: normal;
+  opacity: 0;
+}
+
+.snip1577 h4 {
+  font-size: .8em;
+  /* text-transform: uppercase; */
+  position: relative;
+  top: -199px;
+  font-family: 'Poppins';
+  color: #ccc;
+  line-height: 1.5;
+}
+
+.snip1577 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.snip1577:hover img,
+.snip1577.hover img {
+  zoom: 1;
+  filter: alpha(opacity=20);
+  -webkit-opacity: 0.2;
+  opacity: 0.2;
+}
+
+.snip1577:hover:before,
+.snip1577.hover:before,
+.snip1577:hover:after,
+.snip1577.hover:after {
+  opacity: 1;
+  -webkit-transition-delay: 0.25s;
+  transition-delay: 0.25s;
+}
+
+.snip1577:hover:before,
+.snip1577.hover:before {
+  width: 40px;
+}
+
+.snip1577:hover:after,
+.snip1577.hover:after {
+  height: 40px;
+}
+
+.snip1577:hover h3,
+.snip1577.hover h3,
+.snip1577:hover h4,
+.snip1577.hover h4 {
+  opacity: 1;
+}
+
+.snip1577:hover h3,
+.snip1577.hover h3 {
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.snip1577:hover h4,
+.snip1577.hover h4 {
+  -webkit-transition-delay: 0.35s;
+  transition-delay: 0.35s;
+}
+
+.heading {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.searchInputWrapper {
+  position: relative;
+}
+
+.searchInput {
+    width: 27rem;
+    height: 4rem;
+  padding: 0 3rem;
+  border-radius: 2rem;
+  border: none;
+  transition: transform 0.1s ease-in-out;
+}
+
+::placeholder {
+  color: #a1a1a1;
+}
+
+/* hide the placeholder text on focus */
+:focus::placeholder {
+  text-indent: -999px
+}
+
+.searchInput:focus {
+  outline: none;
+  transform: scale(1.1);
+  transition: all 0.1s ease-in-out;
+}
+
+.searchInputIcon {
+  position: absolute;
+  right: 1.8000000000000007rem;
+    top: 1.66rem;
+  color: #a1a1a1;
+  transition: all 0.1s ease-in-out;
+}
+
+.container:focus-within > 
+.searchInputWrapper > .searchInputIcon {
+  right: 0.2rem;
+}
+.alert{
+  position: relative;
+  top: 140px;
+}
+
+.container2 {
+	max-width:400px;
+	width:100%;
+	margin:0 auto;
+	position:relative;
+  position: relative;
+    bottom: 640px;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+#contact {
+    background: #fff;
+   border-radius: 10px;
+    padding: 24px;
+    margin: -19px 0;
+
+}
+
+#contact h3 {
+	color: #193555;
+	display: block;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+#contact h4 {
+	margin:5px 0 15px;
+	display:block;
+	font-size:13px;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+	width: 100%;
+    border: 1px solid #CCC;
+    background: #f2f2f2;
+    margin: 0 0 5px;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Poppins';
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+
+#contact textarea {
+	height:100px;
+	max-width:100%;
+  resize:none;
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:#ffa019;
+	color:black;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+}
+
+#contact button[type="submit"]:hover {
+	background:#09C;
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
+.card-front__heading {
+  font-size: 1.5rem;
+  margin-top: .25rem;
+}
+
+/* Main heading for inside page */
+.inside-page__heading { 
+  padding-bottom: 1rem; 
+  width: 100%;
+}
+
+/* Mixed */
+
+/* For both inside page's main heading and 'view me' text on card front cover */
+.inside-page__heading,
+.card-front__text-view {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-top: 0.2rem;
+  font-family: 'Montserrat';
+}
+
+.inside-page__heading--city,
+.card-front__text-view--city { color: #ff62b2; }
+
+.inside-page__heading--ski,
+.card-front__text-view--ski { color: #2aaac1; }
+
+.inside-page__heading--beach,
+.card-front__text-view--beach { color: #fa7f67; }
+
+.inside-page__heading--camping,
+.card-front__text-view--camping { color: #00b97c; }
+
+/* Front cover */
+
+.card-front__tp { color: #fafbfa; }
+
+/* For pricing text on card front cover */
+.card-front__text-price {
+  font-size: 1.2rem;
+  margin-top: -.2rem;
+}
+
+/* Back cover */
+
+/* For inside page's body text */
+.inside-page__text {
+  color: #333;
+}
+
+/* Icons ===========================================*/
+
+.card-front__icon {
+  fill: #fafbfa;
+  font-size: 3vw;
+  height: 3.25rem;
+  margin-top: -.5rem;
+  width: 3.25rem;
+}
+
+/* Buttons =================================================*/
+
+.inside-page__btn {
+  background-color: transparent;
+  border: 3px solid;
+  border-radius: .5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  overflow: hidden;
+  padding: .7rem .75rem;
+  position: relative;
+  text-decoration: none;
+  transition: all .3s ease;
+  width: 90%;
+  z-index: 10;
+}
+
+.inside-page__btn::before { 
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: scaleY(0);
+  transition: all .3s ease;
+  width: 100%;
+  z-index: -1;
+}
+
+.inside-page__btn--city { 
+  border-color: #ff40a1;
+  color: #ff40a1;
+}
+
+.inside-page__btn--city::before { 
+  background-color: #ff40a1;
+}
+
+.inside-page__btn--ski { 
+  border-color: #279eb2;
+  color: #279eb2;
+}
+
+.inside-page__btn--ski::before { 
+  background-color: #279eb2;
+}
+
+.inside-page__btn--beach { 
+  border-color: #fa7f67;
+  color: #fa7f67;
+}
+
+.inside-page__btn--beach::before { 
+  background-color: #fa7f67;
+}
+
+.inside-page__btn--camping { 
+  border-color: #00b97d;
+  color: #00b97d;
+}
+
+.inside-page__btn--camping::before { 
+  background-color: #00b97d;
+}
+
+.inside-page__btn:hover { 
+  color: #fafbfa;
+}
+
+.inside-page__btn:hover::before { 
+  transform: scaleY(1);
+}
+
+/* Layout Structure=========================================*/
+
+.main {
+  background: linear-gradient(
+    to bottom right,
+    #eee8dd,
+    #e3d9c6
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Container to hold all cards in one place */
+.card-area {
+  align-items: center;
+  display:inline-grid ;
+  flex-wrap: nowrap;
+  height: initial;
+  justify-content: space-evenly;
+  padding: 1rem;
+  top: -213px;
+  position: relative;
+  left: 448px;
+}
+.card-area2 {
+  align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100%;
+  justify-content: space-evenly;
+  padding: 1rem;
+  position: relative;
+  top: -224px;
+}
+.card-area3 {
+  align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100%;
+  justify-content: space-evenly;
+  padding: 1rem;
+  position: relative;
+  top: -395px;
+}
+.label1,
+.label2,
+.label3{
+  color: #193555;
+  position: relative;
+  left: 100px;
+}
+.label1{
+  top: -116px;
+}
+.label2{
+  top: -110px;
+}
+.label3{
+  top: -284px;
+}
+
+/* Card ============================================*/
+
+/* Area to hold an individual card */
+.card-section {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+
+/* A container to hold the flip card and the inside page */
+.card {
+  
+  background-color: rgba(0,0,0, .05);
+  box-shadow: -0.1rem 1.7rem 6.6rem -3.2rem rgb(0 0 0 / 50%);
+  height: 40rem;
+  position: relative;
+  left: -365px;
+  top: 151px;
+  transition: all 1s ease;
+  /* width: 71rem; */
+  width: 32rem;
+
+}
+
+/* Flip card - covering both the front and inside front page */
+
+/* An outer container to hold the flip card. This excludes the inside page */
+.flip-card {
+  height: 15rem;
+  perspective: 100rem;
+  position: absolute;
+  right: 0;
+  transition: all 1s ease;
+  visibility: hidden;
+  width: 15rem;
+  z-index: 100;
+}
+
+/* The outer container's visibility is set to hidden. This is to make everything within the container NOT set to hidden  */
+/* This is done so content in the inside page can be selected */
+.flip-card > * {
+  visibility: visible;
+}
+
+/* An inner container to hold the flip card. This excludes the inside page */
+.flip-card__container {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  transform-origin: left;
+  transform-style: preserve-3d;
+  transition: all 1s ease;
+  width: 100%;
+}
+
+.card-front,
+.card-back {
+  backface-visibility: hidden;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* Styling for the front side of the flip card */
+
+/* container for the front side */
+.card-front {
+  background-color: #fafbfa;
+  height: 40rem;
+  width: 33rem;
+  left: -171px;
+}
+
+/* Front side's top section */
+.card-front__tp {
+  align-items: center;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 57% 90%, 50% 100%, 43% 90%, 0 90%);
+  display: flex;
+  flex-direction: column;
+  height: 36rem;
+  justify-content: center;
+  padding: .75rem;
+}
+
+.card-front__tp--city {
+  
+  background-size: cover ;
+}
+
+.card-front__tp--ski {
+  
+  background-size: cover ;
+}
+
+.card-front__tp--beach {
+  
+  background-size: cover ;
+}
+
+.card-front__tp--camping {
+  background: linear-gradient(
+    to bottom,
+    #00db93,
+    #00b97d
+  );
+}
+
+/* Front card's bottom section */
+.card-front__bt {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* Styling for the back side of the flip card */
+
+.card-back {
+  background-color: #fafbfa;
+  transform: rotateY(180deg);
+}
+
+/* Specifically targeting the <video> element */
+.video__container {
+  clip-path: polygon(0% 0%, 100% 0%, 90% 50%, 100% 100%, 0% 100%);
+  height: auto;
+  min-height: 40rem;
+  object-fit: cover;
+  width: 16rem;
+}
+
+/* Inside page */
+
+.inside-page {
+  background-color: #fafbfa;
+  box-shadow: inset 20rem 0px 5rem -2.5rem rgba(0,0,0,0.25);
+  height: 100%;
+  padding: 1rem;
+  position: absolute;
+  right: 0;
+  transition: all 1s ease;
+  width: 15rem;
+  z-index: 1;
+}
+
+.inside-page__container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-align: center; 
+  width: 100%;
+  margin-top: 8rem;
+}
+
+/* Functionality ====================================*/
+
+/* This is to keep the card centered (within its container) when opened */
+.card:hover {
+  box-shadow:
+  -.1rem 1.7rem 6.6rem -3.2rem rgba(0,0,0,0.75);
+  width: 30rem;
+}
+
+/* When the card is hovered, the flip card container will rotate */
+.card:hover .flip-card__container {
+  transform: rotateY(-180deg);
+}
+
+/* When the card is hovered, the shadow on the inside page will shrink to the left */
+.card:hover .inside-page {
+  box-shadow: inset 1rem 0px 5rem -2.5rem rgba(0,0,0,0.1);
+}
+.footer {
+  
+   margin-top: 3rem;
+  padding: 1rem 0;
+  width: 100%;
+  top: 171px;
+}
+
+.footer-text {
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.side-box{
+  width: 342px;
+  height: 542px;
+  margin-left: 71px;
+  background-color: rgb(255 255 255 / 43%);
+  border-radius: 6px;
+}
+footer{
+  
+ 
+  position: relative;
+}
+.footer-col{
+  padding: 10px 50px;
+  position: relative;
+  left: -139px;
+}
+
+.contact-info{
+  padding: 10px;
+  position: relative;
+  left: -139px;
+}
+
+.col-heading{
+  font-size: 20px;
+  font-family: 'Poppins';
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.about-us-para{
+  width: 230px;
+  font-size: 15px;
+  font-family: 'Montserrat';
+  color: #fff;
+  font-weight: 400;
+  line-height: 25px;
+  margin-bottom: 50px;
+  position: relative;
+  bottom: 9px;
+}
+.icons{
+  height: 50px;
+  width: 50px;
+  color: #fff;
+  position: relative;
+
+}
+.icon{
+  height: 50px;
+  width: 50px;
+  color: #fff;
+ 
+}
+.links{
+  text-decoration: none;
+  width: 180px;
+  font-size: 15px;
+  font-family: 'Montserrat';
+  color: #fff;
+  font-weight: 400;
+  line-height: 60px;
+  list-style: none;
+  
+}
+.link-head{
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+ 
+  
+  padding: 16px 0px;
+  bottom: 20px;
+
+}
+.contacts{
+text-decoration: none;
+list-style: none;
+}
+.mail{
+  color: #ccc;
+  position: relative;
+ 
+  text-decoration: none;
+
+}
+.phone{
+  color: #ccc;
+  position: relative;
+ 
+  text-decoration: none;
+}
+.rights{
+  background-color: rgb(0, 0, 0);
+  width: 1540px;
+  height: 81px;
+  position: relative;
+  
+  color: #fff;
+  font-family: 'Montserrat';
+  text-align: center;
+  padding: 33px;
+  
+}
+.right{
+  font-size: 18px;
+}
+.footerlogo{
+  height: 52px;
+  width: 281px;
+  position: relative;
+  bottom: 44px;
+}
+.trip-name{
+  position: relative;
+  font-size: 40px;
+  font-family: 'Poppins';
+  color: #373737;
+}
+footer{
+  
+  
+  position: relative;
+  width: 1565px;
+
+}
