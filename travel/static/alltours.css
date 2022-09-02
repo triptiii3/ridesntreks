@@ -195,6 +195,15 @@ header{
   margin-left: 38px;
     position: relative;
 }
+.sidebarhead3{
+    color: #ffa019;
+    font-size: 25px;
+    font-family: 'Montserrat';
+    top: -40px;
+    font-weight: 600;
+    margin-left: 38px;
+      position: relative;
+  }
 ul,li{
   text-decoration: none;
   list-style: none;
@@ -213,7 +222,7 @@ a{
     position: relative;
 }
 .dest-list{
-  padding: 8px;
+  padding: 13px;
 }
 .tourcards{
   position: relative;
@@ -889,9 +898,14 @@ fieldset {
   font-size: 1.2rem;
   text-align: center;
 }
+.nodata{
+    position: relative;
+    color: #fff;
+    top: -379px;
+}
 .side-box{
   width: 342px;
-  height: 542px;
+  height: 921px;
   margin-left: 71px;
   background-color: rgb(255 255 255 / 43%);
   border-radius: 6px;
@@ -1009,11 +1023,6 @@ list-style: none;
   font-size: 40px;
   font-family: 'Poppins';
   color: #373737;
-}
-.nodata{
-  position: relative;
-  color: #fff;
-  top: -379px;
 }
 footer{
   

@@ -40,7 +40,7 @@
 
 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700&subset=latin-ext" rel="stylesheet">
 
-<div id="slider">{% for n in backpackData%}
+<div id="slider">{% for n in alltripData%}
 	<div id="line">
 
 	</div>
@@ -69,12 +69,12 @@
 </div>
 <h2 class="trip-name" > {{ n.destination}}</h2>
 
-  <a href="https://wa.me/919953741008" class="whatsapp_float" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+  <a href="https://wa.me/919315121881" class="whatsapp_float" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
 {%endfor%}
   <section class="trip-overall">
 
     
-   {% for n in backpackData%}
+   {% for n in alltripData%}
   
   <div class="trip-overview">
    <div class="row">
@@ -102,7 +102,7 @@
    </div>
   </div>
   {%endfor%}
-  {% for n in backpackData%}
+  {% for n in alltripData%}
   <section class="sidebar">
     
     <div class="checkout">

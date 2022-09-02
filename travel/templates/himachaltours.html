@@ -42,7 +42,7 @@
 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700&subset=latin-ext" rel="stylesheet">
 
 <header class=" wow slideInDown">
-  <h1 class="destination-head">Weekend Tours</h1>
+  <h1 class="destination-head">Himachal Tours</h1>
   
   
 
@@ -53,22 +53,20 @@
     <h2 class="sidebarhead1">Keywords</h2>
 <div class="container-search">
         
-    <form class="searchInputWrapper" method="get" action="/weekendtours">
+    <form class="searchInputWrapper" method="get" action="/himachaltours">
       <input class="searchInput" type="text" name="destinationname" id="search" placeholder='Search'>
       <i class="searchInputIcon fa fa-search"></i>
       </input>
     </div>
     <h2 class="sidebarhead2">Destinations</h2>
-    <ul>
-        <li class="dest-list"><a href="" class="destinations">Manali</a></li>
-        <li class="dest-list"><a href="" class="destinations">Shimla</a></li>
-        <li class="dest-list"><a href="" class="destinations">Solang valley</a></li>
-        <li class="dest-list"><a href="" class="destinations">Leh</a></li>
+    <ul>{% for n in himachalData%}
+        <li class="dest-list"><a href="" class="destinations">{{n.destination}}</a></li>
+        {%endfor%}
     </ul>
     
 </div>  
 <section class="tourcards">
-{% for n in weekendData%}
+{% for n in himachalData%}
 <figure class="snip1577">
   <img src="{{n.destination_image.url}}" alt="sample99" />
   <h1 class="destination-subhead"> {{n.destination}}</h1>
@@ -76,13 +74,12 @@
     <h4>Click for detailed itinerary</h4>
    
   </figcaption>
-  <a href="./weekendtours/{{n.id}}"></a>
+  <a href="./himachaltours/{{n.id}}"></a>
 </figure>
   </div>
   {%empty%}
   <h2 class="nodata">No data found</h2>
   {% endfor %}</section>
-
   <footer class="footer theme-bg-primary  " id="foot">
     <div class="container py-5 mb-3 col-md-offset-2">
      <div class="row" style="margin-left: 20px">
@@ -198,11 +195,11 @@
    
      </div>
    
+     </div><div class="rights">
+    <h3 class="right"> All right reserved</h3>
+    </div>
     
 </footer>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="wave">
-  <path fill="#c72d0a" fill-opacity="1" d="M0,224L48,240C96,256,192,288,288,298.7C384,309,480,299,576,282.7C672,267,768,245,864,245.3C960,245,1056,267,1152,261.3C1248,256,1344,224,1392,208L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-</svg>
 
   
    

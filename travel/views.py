@@ -84,6 +84,150 @@ def bikingtours(request):
         'bikingtourData':bikingtourData
     }
     return render(request, 'bikingtours.html',data)
+def spitiit(request,id):
+    
+    spitiData=spititrip.objects.filter(id=id)
+    data={
+        'spitiData': spitiData
+    }
+    return render(request,'spitiit.html',data)
+def spititours(request):
+    spitiData=spititrip.objects.all()
+    if request.method=="GET":
+        st=request.GET.get('destinationname')
+        if st!=None:
+            spitiData=spititrip.objects.filter(destination_title__icontains= st)
+    
+    data={
+        'spitiData':spitiData
+    }
+    return render(request, 'spititours.html',data)
+def lehit(request,id):
+    
+    lehData=lehtrip.objects.filter(id=id)
+    data={
+        'lehData': lehData
+    }
+    return render(request,'lehit.html',data)
+def lehtours(request):
+    lehData=lehtrip.objects.all()
+    if request.method=="GET":
+        st=request.GET.get('destinationname')
+        if st!=None:
+            lehData=lehtrip.objects.filter(destination_title__icontains= st)
+    
+    data={
+        'lehData':lehData
+    }
+    return render(request, 'lehtours.html',data)
+def himachalit(request,id):
+    
+    himachalData=himachaltrip.objects.filter(id=id)
+    data={
+        'himachalData': himachalData
+    }
+    return render(request,'himachalit.html',data)
+def himachaltours(request):
+    himachalData=himachaltrip.objects.all()
+    if request.method=="GET":
+        st=request.GET.get('destinationname')
+        if st!=None:
+            himachalData=himachaltrip.objects.filter(destination_title__icontains= st)
+    
+    data={
+        'himachalData':himachalData
+    }
+    return render(request, 'himachaltours.html',data)
+def bhutanit(request,id):
+    
+    bhutanData=bhutantrip.objects.filter(id=id)
+    data={
+        'bhutanData': bhutanData
+    }
+    return render(request,'bhutanit.html',data)
+def bhutantours(request):
+    bhutanData=bhutantrip.objects.all()
+    if request.method=="GET":
+        st=request.GET.get('destinationname')
+        if st!=None:
+            bhutanData=bhutantrip.objects.filter(destination_title__icontains= st)
+    
+    data={
+        'bhutanData':bhutanData
+    }
+    return render(request, 'bhutantours.html',data)
+def dubaiit(request,id):
+    
+    dubaiData=dubaitrip.objects.filter(id=id)
+    data={
+        'dubaiData': dubaiData
+    }
+    return render(request,'dubaiit.html',data)
+def dubaitours(request):
+    dubaiData=dubaitrip.objects.all()
+    if request.method=="GET":
+        st=request.GET.get('destinationname')
+        if st!=None:
+            dubaiData=dubaitrip.objects.filter(destination_title__icontains= st)
+    
+    data={
+        'dubaiData':dubaiData
+    }
+    return render(request, 'dubaitours.html',data)
+def kashmirit(request,id):
+    
+    kashmirData=kashmirtrip.objects.filter(id=id)
+    data={
+        'kashmirData': kashmirData
+    }
+    return render(request,'kashmirit.html',data)
+def kashmirtours(request):
+    kashmirData=kashmirtrip.objects.all()
+    if request.method=="GET":
+        st=request.GET.get('destinationname')
+        if st!=None:
+            kashmirData=kashmirtrip.objects.filter(destination_title__icontains= st)
+    
+    data={
+        'kashmirData':kashmirData
+    }
+    return render(request, 'kashmirtours.html',data)
+def sikkimit(request,id):
+    
+    sikkimData=sikkimtrip.objects.filter(id=id)
+    data={
+        'sikkimData': sikkimData
+    }
+    return render(request,'sikkimit.html',data)
+def sikkimtours(request):
+    sikkimData=sikkimtrip.objects.all()
+    if request.method=="GET":
+        st=request.GET.get('destinationname')
+        if st!=None:
+         sikkimData=sikkimtrip.objects.filter(destination_title__icontains= st)
+     
+    data={
+        'sikkimData':sikkimData
+    }
+    return render(request, 'sikkimtours.html',data)
+def meghalayait(request,id):
+    
+    meghalayaData=meghalayatrip.objects.filter(id=id)
+    data={
+        'meghalayaData': meghalayaData
+    }
+    return render(request,'meghalayait.html',data)
+def meghalayatours(request):
+    meghalayaData=meghalayatrip.objects.all()
+    if request.method=="GET":
+        st=request.GET.get('destinationname')
+        if st!=None:
+         meghalayaData=meghalayatrip.objects.filter(destination_title__icontains= st)
+     
+    data={
+        'meghalayaData':meghalayaData
+    }
+    return render(request, 'meghalayatours.html',data)
 def backpackit(request,id):
     
     backpackData=backpackingtrip.objects.filter(id=id)
@@ -131,3 +275,10 @@ def alltours(request):
         'alltoursData':alltoursData
     }
     return render(request, 'alltours.html',data)
+def alltoursit(request,id):
+    
+    alltoursData=alltrip.objects.filter(id=id)
+    data={
+        'alltoursData': alltoursData
+    }
+    return render(request,'alltoursit.html',data)
