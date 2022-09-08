@@ -34,11 +34,13 @@ urlpatterns = [
     path('sikkimtours', sikkimtours ,name="sikkimtours"),
     path('meghalayatours', meghalayatours ,name="meghalayatours"),
     path('himachaltours', himachaltours ,name="himachaltours"),
+    path('treks', treks ,name="treks"),
     path('checkout', checkout ,name="checkout"),
 
     path('backpackingtours', backpackingtours ,name="backpackingtours"),
     path('weekendtours', weekendtours ,name="weekendtours"),
     path('alltours', alltours ,name="alltours"),
+    path('treks/<int:id>', treksit ,name="treksit"),
     path('alltours/<int:id>', alltoursit ,name="alltoursit"),
     path('weekendtours/<int:id>', weekendit ,name="weekendit"),
     path('backpackingtours/<int:id>', backpackit ,name="backpackit"),

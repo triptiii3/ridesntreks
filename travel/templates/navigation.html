@@ -46,7 +46,8 @@
     <div id="nav">
         <div class="contained">
             <div id="logo">
-                <img src="{% static 'images/logo2.png'%}" class="mmlogo">
+              <a href="{% url 'index'%}">
+                <img src="{% static 'images/logo2.png'%}" class="mmlogo"></a>
             </div>
             <div class="container4">
                 <div id="hamburger"><span></span><span></span><span></span></div>
@@ -55,8 +56,19 @@
                     <ul>
                         
                         <li>
-                            <a href="{% url 'index'%}" alt="1">Home</a>
-                            
+                            <a href="{% url 'treks'%}" alt="1">Treks</a>
+                            <ul class="ddFadeFade">
+                              <li class="dropdown-items item1"><a href="#" alt="1"><img class="nav-img" src="{% static './images/img2.jpg'%}">
+                              <h2 class="nav-dest">Solang valley</h2>
+                            <h3 class="nav-price">From 6000/-</h3></a></li>
+                              <li class="dropdown-items item2"><a href="#" alt="1"><img class="nav-img" src="{% static './images/img2.jpg'%}">
+                                <h2 class="nav-dest">Solang valley</h2>
+                              <h3 class="nav-price">From 6000/-</h3></a></li>
+                              <li class="dropdown-items item3"><a href="#" alt="1"><img class="nav-img" src="{% static './images/img2.jpg'%}">
+                                <h2 class="nav-dest">Solang valley</h2>
+                              <h3 class="nav-price">From 6000/-</h3></a></li>
+                              <li class=" item4"><a href="" alt="1" class="seeall">See all tours</a></li>
+                          </ul>
                         </li>
                         
                         <li>

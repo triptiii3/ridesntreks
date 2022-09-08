@@ -264,6 +264,24 @@ def weekendit(request,id):
         'weekendData': weekendData
     }
     return render(request,'weekendit.html',data)
+def treks(request):
+    treksData=trekking.objects.all()
+    if request.method=="GET":
+        st=request.GET.get('destinationname')
+        if st!=None:
+            treksData=trekking.objects.filter(destination_title__icontains= st)
+    
+    data={
+        'treksData':treksData
+    }
+    return render(request, 'treks.html',data)
+def treksit(request,id):
+    
+    treksData=trekking.objects.filter(id=id)
+    data={
+        'treksData': treksData
+    }
+    return render(request,'treksit.html',data)
 def alltours(request):
     alltoursData=alltrip.objects.all()
     if request.method=="GET":

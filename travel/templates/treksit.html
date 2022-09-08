@@ -1,0 +1,599 @@
+{% include 'navigation.html'%}
+{% load static %}
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rides N Treks</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Poppins:wght@400;500&display=swap"
+  rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+      integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  /><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{% static 'itinerary.css' %}">
+
+<link rel="stylesheet" href="{% static 'media-query3.css' %}">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700&subset=latin-ext" rel="stylesheet">
+
+<div id="slider">{% for n in treksData%}
+	<div id="line">
+
+	</div>
+
+	<ul id="move">
+		<li><img src="{{n.main_image.url}}"></li>
+		
+		<li><img src="{{n.destination_image1.url}}"></li>
+
+		<li><img src="{{n.destination_image2.url}}"></li>
+		<li><img src="{{n.destination_image3.url}}"></li>
+        <li><img src="{{n.destination_image4.url}}"></li>
+        <li><img src="{{n.destination_image5.url}}"></li>
+	</ul>
+  
+	<div id="back">
+		<
+	</div>
+	<div id="forword">
+		>
+	</div>
+	<div id="dots">
+		
+	</div>
+	
+</div>
+<h2 class="trip-name" > {{ n.destination}}</h2>
+
+  <a href="https://wa.me/919953741008" class="whatsapp_float" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+{%endfor%}
+  <section class="trip-overall">
+
+    
+   {% for n in treksData%}
+  
+  <div class="trip-overview">
+   <div class="row">
+    <div class="col "><img src="{% static './images/time.png'%}">
+    <h3 class="col3">Time : {{ n.time}}</h3>
+  </div>
+  
+  <div class="col "><img src="{% static './images/trek.png'%}">
+    <h3 class="col3">Hike : {{ n.hiketype}}</h3>
+  </div>
+
+   
+    <div class="col"><img src="{% static './images/difficulty.png'%}">
+    <h3 class="col3">Difficulty : {{ n.difficulty}}</h3>
+  </div>
+ 
+  <div class="col"><img src="{% static './images/people.png'%}">
+    <h3 class="col3">Min age : {{ n.minage}}</h3>
+  </div>
+
+   </div>
+  </div>
+  
+
+   </div>
+  </div>
+  {%endfor%}
+  {% for n in treksData%}
+  <section class="sidebar">
+    
+    <div class="checkout">
+     
+     <div class="content">
+      <div class="container2">
+        {% csrf_token%}
+        <div class="nav">
+          <h1 class="btn " id="btns1" onclick="showLogin()">Booking Form</h1>
+          
+        </div>
+        <form id="login" class="loginClass" action="{% url 'checkout' %}" >
+          <label class="label-heads">Destination Name</label>
+          <select name="destination" id="cars" class="selectpicker" >
+            <option value="{{n.destination}}" >{{n.destination}}</option>
+            </select>
+          <label class="label-heads1">Enter full name</label>
+          <input type="text" id="fullname" placeholder="Full Name" name="name" value="{{name}}" required><br>
+          <label class="label-heads2">Enter email address</label>
+          <input type="email" id="email" placeholder="Email Address" name="email" value="{{email}}" required><br>
+          <label class="label-heads3">Choose your batch</label>
+          <select name="batch" id="cars" class="selectpicker" >
+            <option value="{{n.batch1}}" >{{n.batch1}}</option>
+            <option value="{{n.batch2}}" >{{n.batch2}}</option>
+            <option value="{{n.batch3}}" >{{n.batch3}}</option>
+            <option value="{{n.batch4}}" >{{n.batch4}}</option>
+            <option value="{{n.batch5}}" >{{n.batch5}}</option>
+            <option value="{{n.batch6}}" >{{n.batch6}}</option>
+          </select>
+          
+         
+          <label class="label-heads4">Choose your travel mode</label>
+          <select name="mode" id="cars" class="selectpicker" >
+            <option value={{n.mode1_price}} >{{n.mode1}}</option>
+            <option value={{n.mode2_price}}>{{n.mode2}}</option>
+            <option value={{n.mode1_price}}>{{n.mode3}}</option>
+            <option value={{n.mode4_price}}>{{n.mode4}}</option>
+          </select>
+          <label class="label-heads5">Number of people</label>
+          <input type="text" id="quantity" placeholder="People" name="people" value="{{people}}" required><br>
+          
+          <button  class="subBtn cart" id="pr{{n.id}}" type="submit" >Proceed Booking</button>
+          
+        </form>
+      </div>
+     </div>
+     
+    </div>
+    <div class="book">
+      <h2 class="booking-heading">
+       Travel modes
+      </h2>
+      <div class="booking-dets">
+        
+      <h4 class="mode">{{n.mode1}}</h4><h4 class="mode-price">{{n.mode1_price}}</h4>
+      </div>
+      <div class="booking-dets">
+        
+         <h4 class="mode">{{n.mode2}}</h4><h4 class="mode-price">{{n.mode2_price}}</h4>
+         </div>
+         <div class="booking-dets">
+        
+           <h4 class="mode">{{n.mode3}}</h4><h4 class="mode-price">{{n.mode3_price}}</h4>
+           </div>
+           <div class="booking-dets">
+        
+             <h4 class="mode">{{n.mode4|default_if_none:""}}</h4><h4 class="mode-price">{{n.mode4_price|default_if_none:""}}</h4>
+             </div>
+             <div class="booking-dets">
+        
+              <h4 class="mode">{{n.mode5|default_if_none:""}}</h4><h4 class="mode-price">{{n.mode5_price|default_if_none:""}}</h4>
+              </div>
+             
+ 
+  
+    </section>
+  <div class="trip-details acc">
+    <h2 class="photos" id="itinerary">Itinerary</h2>
+    <div class="accordion">
+      <div class="accordion__collapsible">
+          <div class="collapsible__header">
+            <p>
+              <span class="days">{{n.dayno1}}</span> {{n.itineraryhead1}}</p>
+          </div>
+          <div class="collapsible__content">
+              <p>
+                 {{n.daycontent1}}
+              </p>
+          </div>
+      </div>
+      <div class="accordion__collapsible">
+        <div class="collapsible__header">
+          <p>
+            <span class="days">{{n.dayno2}}</span> {{n.itineraryhead2}}</p>
+        </div>
+        <div class="collapsible__content">
+            <p>
+               {{n.daycontent2}}
+            </p>
+        </div>
+    </div>
+    <div class="accordion__collapsible">
+      <div class="collapsible__header">
+        <p>
+          <span class="days">{{n.dayno3}}</span> {{n.itineraryhead3}}</p>
+      </div>
+      <div class="collapsible__content">
+          <p>
+             {{n.daycontent3}}
+          </p>
+      </div>
+  </div>
+  <div class="accordion__collapsible">
+    <div class="collapsible__header">
+      <p>
+        <span class="days">{{n.dayno4}}</span> {{n.itineraryhead4}}</p>
+    </div>
+    <div class="collapsible__content">
+        <p>
+           {{n.daycontent4}}
+        </p>
+    </div>
+</div>
+<div class="accordion__collapsible">
+  <div class="collapsible__header">
+    <p>
+      <span class="days">{{n.dayno5|default_if_none:"" }}</span> {{n.itineraryhead5|default_if_none:"" }}</p>
+  </div>
+  <div class="collapsible__content">
+      <p>
+         {{n.daycontent5|default_if_none:"" }}
+      </p>
+  </div>
+</div>
+<div class="accordion__collapsible">
+  <div class="collapsible__header">
+    <p>
+      <span class="days">{{n.dayno6|default_if_none:"" }}</span> {{n.itineraryhead6|default_if_none:"" }}</p>
+  </div>
+  <div class="collapsible__content">
+      <p>
+         {{n.daycontent6|default_if_none:"" }}
+      </p>
+  </div>
+</div>
+
+      
+    
+  </div>
+ 
+
+  </div>
+ 
+  
+  <div class="trip-details">
+ 
+    <h3>Meeting point</h3>
+    <p class="trip-det">{{n.meetingpoint}}</p>
+  </div>
+  <div class="trip-details hi">
+ 
+    <h3 class="includes">Price Includes</h3>
+    <ul >
+      <li class="lists">{{n.inclusions1}} </li>
+      <li class="lists">{{n.inclusions2}}</li>
+      <li class="lists">{{n.inclusions3}}</li>
+      <li class="lists">{{n.inclusions4}}</li>
+      <li class="lists">{{n.inclusions5}}</li>
+    </ul>
+    <h4 class="exclude">Price Excludes</h4>
+    <ul>
+      <li class="lists2">{{n.exclusions1}} </li>
+      <li class="lists2">{{n.exclusions2}} </li>
+      <li class="lists2">{{n.exclusions3}} </li>
+      <li class="lists2">{{n.exclusions4}} </li>
+      <li class="lists2">{{n.exclusions5}} </li>
+    </ul>
+  </div>
+  
+
+  <div class="trip-details">
+ 
+    <h3>What to expect</h3>
+    <p class="expect">
+      {{n.expect1}}</p>
+
+<p class="expect">{{n.expect2}}
+    </p>
+    
+  </div>
+
+
+  <div class="recenttours">
+    <h2 class="booking-heading3">
+     Related Tours
+    </h2>
+    <a class="panda" href="{{n.relatedit1.url}}"><img src="{{n.reltourimg1.url}}" class="related"/>
+
+     <h2 class="heading">{{n.relatedtour1}}</h2>
+     
+   <h4 class="newprice">{{n.relatedprice1}}</h4></a>
+   <a class="panda" href="{{n.relatedit2.url}}"><img src="{{n.reltourimg2.url}}" class="related"/>
+
+     <h2 class="heading">{{n.relatedtour2}}</h2>
+     
+   <h4 class="newprice">{{n.relatedprice2}}</h4></a></div>{%endfor%}
+</section>
+  <footer class="footer theme-bg-primary  " id="foot">
+    <div class="container py-5 mb-3 col-md-offset-2">
+     <div class="row" style="margin-left: 20px">
+       <div class="footer-col col-lg-3 contact-n">
+         <h4 class="col-heading">CONTACT n
+         </h4>
+         <ul class="contacts">
+            <li class="call">
+                <a href="" class="phone">
+                    <i class="fa fa-phone fa icon"> </i>98111189090
+                  </a>
+               
+            </li>
+            <li class="email">
+                <a href="" class="mail">
+                    <i class="fa fa-envelope fa icon"> </i>mountmonks@gmail.com
+                  </a>
+               
+            </li>
+         </ul>
+         <ul class="social-list">
+           <li class="list-inline-item">
+             <a href="">
+               <i class="fa fa-instagram fa-2x icons"></i>
+             </a>
+   
+           </li>
+           <li class="list-inline-item" >
+             <a href="">
+               <i class="fa fa-twitter fa-2x icons"></i>
+             </a>
+   
+           </li>
+           <li class="list-inline-item">
+             <a href="">
+               <i class="fa fa-facebook fa-2x icons"></i>
+             </a>
+   
+           </li>
+   
+         </ul>
+   
+       </div>
+       <div class="footer-col col-lg-3">
+         <h4 class="col-heading">ABOUT US
+         </h4>
+         <ul>
+           <li class="links" >
+             <a href="" class="link-head">
+              Our Story
+             </a>
+   
+           </li>
+           <li class="links">
+             <a href="" class="link-head">
+              Travel Blogs
+             </a>
+   
+           </li>
+           <li class="links">
+             <a href="" class="link-head">
+               Working with us
+             </a>
+   
+           </li>
+           <li class="links">
+             <a href="" class="link-head">
+               Be our partner
+             </a>
+   
+           </li>
+          
+         </ul>
+   
+       </div>
+       
+       <div class="footer-col col-lg-3">
+         <h4 class="col-heading">SUPPORT
+         </h4>
+         <ul>
+           <li class="links">
+             <a href="" class="link-head">
+               Customer Support
+             </a>
+   
+           </li>
+           <li class="links">
+             <a href="" class="link-head">
+              Privacy & Policy
+             </a>
+   
+           </li>
+           <li class="links">
+             <a href="" class="link-head">
+               Contact Channels
+             </a>
+   
+           </li>
+          
+         </ul>
+   
+       </div>
+       <div class="footer-col col-lg-3">
+         <h4 class="col-heading">PAY SAFELY WITH US
+         </h4>
+         
+         <p class="about-us-para">
+            The payment is encrypted and transmitted securely with an SSL protocol
+         </p>
+         <img src="{% static './images/creditcard-logo.png'%}" class="footerlogo">
+   
+       </div>
+   
+     </div>
+   
+     </div>
+    
+</footer>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="wave">
+  <path fill="#c72d0a" fill-opacity="1" d="M0,224L48,240C96,256,192,288,288,298.7C384,309,480,299,576,282.7C672,267,768,245,864,245.3C960,245,1056,267,1152,261.3C1248,256,1344,224,1392,208L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+</svg>
+
+
+  
+   
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>	
+<script type="text/javascript" src="js.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        
+      if(scrl < 80)
+          {
+              $('.secondnav').removeClass('fixedbar');
+          }
+      else{
+          $('.secondnav').addClass('fixedbar');
+      }
+      
+  ;
+    </script>
+<script>
+  
+
+  document.addEventListener('DOMContentLoaded', () => {
+    $('.alert').alert()
+  })
+</script>
+<script>
+  let collapsibleHeaders = document.getElementsByClassName('collapsible__header');
+
+Array.from(collapsibleHeaders).forEach(header => {
+header.addEventListener('click', () => {
+  header.parentElement.classList.toggle('collapsible--open');
+});
+});
+</script>
+<script>
+  function showSignup(){
+    document.getElementById("signUp").style.display = "flex";
+    document.getElementById("login").style.display = "none";
+    document.getElementById("btns2").style.color = "#000";
+    document.getElementById("btns1").style.color = "#ccc";
+}
+function showLogin(){
+    document.getElementById("signUp").style.display = "none";
+    document.getElementById("login").style.display = "flex";
+    document.getElementById("btns1").style.color = "#000";
+    document.getElementById("btns2").style.color = "#ccc";
+}
+</script>
+<script>
+    
+    window.onload = function() {
+
+let slider = document.querySelector('#slider');
+let move = document.querySelector('#move');
+let moveLi = Array.from(document.querySelectorAll('#slider #move li'));
+let forword = document.querySelector('#slider #forword');
+let back = document.querySelector('#slider #back');
+let counter = 1;
+let time = 4000;
+let line = document.querySelector('#slider #line');
+let dots = document.querySelector('#slider #dots');
+let dot;
+
+for (i = 0; i < moveLi.length; i++) {
+
+    dot = document.createElement('li');
+    dots.appendChild(dot);
+    dot.value = i;
+}
+
+dot = dots.getElementsByTagName('li');
+
+line.style.animation = 'line ' + (time / 1000) + 's linear infinite';
+dot[0].classList.add('active');
+
+function moveUP() {
+
+    if (counter == moveLi.length) {
+
+        moveLi[0].style.marginLeft = '0%';
+        counter = 1;
+
+    } else if (counter >= 1) {
+
+        moveLi[0].style.marginLeft = '-' + counter * 100 + '%';
+        counter++;
+    } 
+
+    if (counter == 1) {
+
+        dot[moveLi.length - 1].classList.remove('active');
+        dot[0].classList.add('active');
+
+    } else if (counter > 1) {
+
+        dot[counter - 2].classList.remove('active');
+        dot[counter - 1].classList.add('active');
+
+    }
+
+}
+
+function moveDOWN() {
+
+    if (counter == 1) {
+
+        moveLi[0].style.marginLeft = '-' + (moveLi.length - 1) * 100 + '%';
+        counter = moveLi.length;
+        dot[0].classList.remove('active');
+        dot[moveLi.length - 1].classList.add('active');
+
+    } else if (counter <= moveLi.length) {
+
+        counter = counter - 2;
+        moveLi[0].style.marginLeft = '-' + counter * 100 + '%';   
+        counter++;
+
+        dot[counter].classList.remove('active');
+        dot[counter - 1].classList.add('active');
+
+    }  
+
+}
+
+for (i = 0; i < dot.length; i++) {
+
+    dot[i].addEventListener('click', function(e) {
+
+        dot[counter - 1].classList.remove('active');
+        counter = e.target.value + 1;
+        dot[e.target.value].classList.add('active');
+        moveLi[0].style.marginLeft = '-' + (counter - 1) * 100 + '%';
+
+    });
+
+}
+
+forword.onclick = moveUP;
+back.onclick = moveDOWN;
+
+let autoPlay = setInterval(moveUP, time);
+
+slider.onmouseover = function() {
+
+    autoPlay = clearInterval(autoPlay);
+    line.style.animation = '';
+
+}
+
+slider.onmouseout = function() {
+
+    autoPlay = setInterval(moveUP, time);
+    line.style.animation = 'line ' + (time / 1000) + 's linear infinite';
+
+}
+
+}
+
+
+
+</script>
