@@ -1284,7 +1284,7 @@ class meghalayatrip(models.Model):
     expect1=models.CharField(max_length=400 , null=True, blank=True)
     expect2=models.CharField(max_length=400 , null=True, blank=True)
    
-class trekkings(models.Model):
+class firsts(models.Model):
     id=models.AutoField(max_length=50 , primary_key=True)
     destination=models.CharField(max_length=50,null=True, blank=True)
     destination_image=models.ImageField(upload_to='images/', null=True, blank=True)
