@@ -3,13 +3,9 @@ from django.contrib import messages
 from home.models import *
 # Create your views here.
 def index(request):
-   
-    
     return render(request, 'index.html')
 
-def popularit(request):
-    
-    
+def popularit(request,id):
     return render(request,'popularit.html')
 def checkout(request):
     
@@ -259,9 +255,23 @@ def weekendit(request,id):
     }
     return render(request,'weekendit.html',data)
 def treks(request):
-    return render(request, 'treks.html')
-def treksit(request):
-    return render(request,'treksit.html')
+    treksData=trekking.objects.all()
+    if request.method=="GET":
+        st=request.GET.get('destinationname')
+        if st!=None:
+            treksData=trekking.objects.filter(destination_title__icontains= st)
+    
+    data={
+        'treksData':treksData
+    }
+    return render(request, 'treks.html',data)
+def treksit(request,id):
+    
+    treksData=trekking.objects.filter(id=id)
+    data={
+        'treksData': treksData
+    }
+    return render(request,'treksit.html',data)
 def alltours(request):
     alltoursData=alltrip.objects.all()
     if request.method=="GET":
