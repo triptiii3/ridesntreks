@@ -8,7 +8,7 @@ admin.site.register(trekking)
 admin.site.register(bikingtrip)
 admin.site.register(roadtrip)
 admin.site.register(backpackingtrip)
-admin.site.register(populartrip)
+
 admin.site.register(weekendtrip)
 admin.site.register(alltrip)
 admin.site.register(spititrip)
