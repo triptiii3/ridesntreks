@@ -3,10 +3,20 @@ from django.contrib import messages
 from home.models import *
 # Create your views here.
 def index(request):
-    return render(request, 'index.html')
+   
+    popularData=populartrip.objects.all()
+    data={
+         'popularData':popularData
+    }
+    return render(request, 'index.html',data)
 
 def popularit(request,id):
-    return render(request,'popularit.html')
+    
+    popularData=populartrip.objects.filter(id=id)
+    data={
+        'popularData': popularData
+    }
+    return render(request,'popularit.html',data)
 def checkout(request):
     
     name=request.GET.get('name')
