@@ -265,23 +265,11 @@ def weekendit(request,id):
     }
     return render(request,'weekendit.html',data)
 def treks(request):
-    treksData=firsts.objects.all()
-    if request.method=="GET":
-        st=request.GET.get('destinationname')
-        if st!=None:
-            treksData=firsts.objects.filter(destination_title__icontains= st)
     
-    data={
-        'treksData':treksData
-    }
-    return render(request, 'treks.html',data)
+    return render(request, 'treks.html')
 def treksit(request,id):
     
-    treksData=firsts.objects.filter(id=id)
-    data={
-        'treksData': treksData
-    }
-    return render(request,'treksit.html',data)
+    return render(request,'treksit.html')
 def alltours(request):
     alltoursData=alltrip.objects.all()
     if request.method=="GET":
