@@ -80,7 +80,7 @@
   {%empty%}
   <h2 class="nodata">No data found</h2>
   {% endfor %}</section>
-  <footer class="footer theme-bg-primary  " id="foot">
+  <footer class="footer theme-bg-primary " id="foot">
     <div class="container py-5 mb-3 col-md-offset-2">
      <div class="row" style="margin-left: 20px">
        <div class="footer-col col-lg-3 contact-info">
@@ -88,21 +88,21 @@
          </h4>
          <ul class="contacts">
             <li class="call">
-                <a href="" class="phone">
-                    <i class="fa fa-phone fa icon"> </i>98111189090
+                <a href="tel:+918595864155" class="phone">
+                    <i class="fa fa-phone fa icon"> </i>8595864155 
                   </a>
                
             </li>
             <li class="email">
-                <a href="" class="mail">
-                    <i class="fa fa-envelope fa icon"> </i>mountmonks@gmail.com
+                <a href="mailto:Mountmonksadv@gmail.com" class="mail">
+                    <i class="fa fa-envelope fa icon"> </i>Mountmonksadv@gmail.com
                   </a>
                
             </li>
          </ul>
          <ul class="social-list">
            <li class="list-inline-item">
-             <a href="">
+             <a href="www.Instagram.com/Mountmonks">
                <i class="fa fa-instagram fa-2x icons"></i>
              </a>
    
@@ -128,29 +128,18 @@
          </h4>
          <ul>
            <li class="links" >
-             <a href="" class="link-head">
+             <a href="{% url 'aboutus'%}" class="link-head">
               Our Story
              </a>
    
            </li>
            <li class="links">
-             <a href="" class="link-head">
+             <a href="{% url 'blog'%}" class="link-head">
               Travel Blogs
              </a>
    
            </li>
-           <li class="links">
-             <a href="" class="link-head">
-               Working with us
-             </a>
-   
-           </li>
-           <li class="links">
-             <a href="" class="link-head">
-               Be our partner
-             </a>
-   
-           </li>
+           
           
          </ul>
    
@@ -161,19 +150,19 @@
          </h4>
          <ul>
            <li class="links">
-             <a href="" class="link-head">
+             <a href="https://wa.me/918595864155" class="link-head">
                Customer Support
              </a>
    
            </li>
            <li class="links">
-             <a href="" class="link-head">
+             <a href="{% url 'privacy'%}"" class="link-head">
               Privacy & Policy
              </a>
    
            </li>
            <li class="links">
-             <a href="" class="link-head">
+             <a href="{% url 'contactus'%}"" class="link-head">
                Contact Channels
              </a>
    
@@ -189,15 +178,21 @@
          <p class="about-us-para">
             The payment is encrypted and transmitted securely with an SSL protocol
          </p>
-         <img src="{% static './images/creditcard-logo.png'%}" class="footerlogo">
+         <img src="{% static './images/razorpay.png'%}" class="footerlogo">
    
        </div>
    
      </div>
+  
    
+     </div>
      
+  
+     <div class="rights">
+    <h3 class="right"> All right reserved</h3>
+    </div>
     
-</footer>
+  </footer>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="wave">
   <path fill="#c72d0a" fill-opacity="1" d="M0,224L48,240C96,256,192,288,288,298.7C384,309,480,299,576,282.7C672,267,768,245,864,245.3C960,245,1056,267,1152,261.3C1248,256,1344,224,1392,208L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
 </svg>

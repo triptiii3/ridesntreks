@@ -1,0 +1,16 @@
+@media only screen and (max-width:1428px) {
+	
+    .container4 {
+        text-align: left;
+        display: inline-block;
+        height: 45px;
+        left: -124px;
+        position: relative;
+    }
+    .mmlogo{
+        left: 93px;
+        top: 10px;
+    position: relative;
+    }
+	
+}
