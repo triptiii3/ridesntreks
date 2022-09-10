@@ -59,12 +59,10 @@
       </input>
     </div>
     <h2 class="sidebarhead2">Destinations</h2>
-    <ul>
-        <li class="dest-list"><a href="" class="destinations">Manali</a></li>
-        <li class="dest-list"><a href="" class="destinations">Shimla</a></li>
-        <li class="dest-list"><a href="" class="destinations">Solang valley</a></li>
-        <li class="dest-list"><a href="" class="destinations">Leh</a></li>
-    </ul>
+    <ul>{% for n in backpackData%}
+      <li class="dest-list"><a href="" class="destinations">{{n.destination}}</a></li>
+      {%endfor%}
+  </ul>
     
 </div>  
 <section class="tourcards">
