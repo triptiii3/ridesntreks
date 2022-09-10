@@ -20,3 +20,19 @@
     }
 	
 }
+@media only screen and (max-width:400px){
+    header{
+        height: 430px;
+    }
+    .heading1{
+        left: 28px;
+        font-size: 20px;
+        position: relative;
+    }
+    .heading2{
+        top: 270px;
+    left: 28px;
+    font-size: 20px;
+    position: relative;
+    }
+} 
