@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 from pathlib import Path
 import os
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -81,13 +82,14 @@ WSGI_APPLICATION = 'ridesntreks.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+       'ENGINE': 'django.db.backends.postgresql',
+       'NAME': 'd4l63q8i9tld90',
+       'USER': 'ljhqrzssqmsuqv',
+       'PASSWORD': '830cab07e396f6bc46f5d26c22c1b61a24b99167257f72e46d7fdb4266cc445e',
+       'HOST': 'ec2-107-23-76-12.compute-1.amazonaws.com',
+       'PORT': '5432',
+   }
 }
-import dj_database_url
-db_from_env = dj_database_url.config(conn_max_age=600)
-DATABASES['default'].update(db_from_env)
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
