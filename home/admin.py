@@ -10,6 +10,7 @@ admin.site.register(firsts)
 admin.site.register(bikingtrip)
 admin.site.register(roadtrip)
 admin.site.register(backpackingtrip)
+admin.site.register(populartrip)
 
 admin.site.register(weekendtrip)
 admin.site.register(alltrip)
