@@ -226,7 +226,7 @@
         /* margin-top: 51px; */
         position: relative;
         top: 23px;
-        left: 19px;
+        left: 39px;
     }
     .section-heading3::after {
         display: inline-grid;
@@ -267,6 +267,17 @@
         padding: 10px;
         position: relative;
         left: 8px;
+    }
+    .sliders2 {
+        position: relative;
+        top: 35px;
+        height: 700px;
+    }
+    .wave {
+        position: relative;
+        top: 48px;
+        width: 492px;
+        height: 200px;
     }
 
 .footer-col {
