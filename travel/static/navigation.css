@@ -517,7 +517,7 @@ li:hover ul.swingLft.hov {
     width: 25px;
     height: 24px;
     position: fixed;
-    right: 1117px;
+    right: 1159px;
     top: 15px;
     cursor: pointer;
 }
@@ -540,7 +540,7 @@ li:hover ul.swingLft.hov {
 #close {
     position: fixed;
     top: 10px;
-    right: 1117px;
+    right: 1159px;
     width: 30px;
     height: 30px;
     z-index: 1200;
@@ -653,10 +653,13 @@ li:hover ul.swingLft.hov {
 	height: calc(100%);
 }
 #nav.showNav #menuWrapper {
-	height: 300px;
-	overflow-y: auto;
-    left: -362px;
-    font-size: 15px;
+
+		height: 300px;
+		overflow-y: auto;
+		left: -43px;
+		font-size: 15px;
+		top: 20px;
+	
 }
   .contained {
 	padding-top: 5px;
@@ -694,6 +697,9 @@ li:hover ul.swingLft.hov {
 	-ms-transform: translateX(0);
 	-o-transform: translateX(0);
 	transform: translateX(0);
+	
+		left: 334px;
+	
 }
 #nav ul:first-child {	
 	width:96%;

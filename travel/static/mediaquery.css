@@ -35,4 +35,24 @@
     font-size: 20px;
     position: relative;
     }
+    .mmlogo {
+        width: 56px;
+    height: 54px;   
+     left: -22px;
+    top: -5px;
+    position: relative;
+
+    }
+    .search {
+        background-color: #c72d0a;
+        color: #fff;
+        height: 36px;
+        width: 169px;
+        font-family: 'Poppins';
+        font-size: 17px;
+        border-radius: 10px;
+        position: relative;
+        top: -209px;
+        left: 31px;
+    }
 } 
