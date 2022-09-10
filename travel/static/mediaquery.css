@@ -27,10 +27,11 @@
     .heading1{
         left: 28px;
         font-size: 20px;
+        top: 235px;
         position: relative;
     }
     .heading2{
-        top: 270px;
+        top: 227px;
     left: 28px;
     font-size: 20px;
     position: relative;
@@ -38,8 +39,9 @@
     .mmlogo {
         width: 56px;
     height: 54px;   
-     left: -22px;
-    top: -5px;
+    left: -44px;
+    top: -2px;
+
     position: relative;
 
     }
@@ -47,12 +49,56 @@
         background-color: #c72d0a;
         color: #fff;
         height: 36px;
-        width: 169px;
+        width: 155px;
         font-family: 'Poppins';
         font-size: 17px;
         border-radius: 10px;
         position: relative;
-        top: -209px;
+        top: -251px;
         left: 31px;
     }
+    .sliders h1::after {
+        display: block;
+        height: 3px;
+        width: 100px;
+        background-color: #c72d0a;
+        content: " ";
+        margin: 65px auto 0 auto;
+        float: left;
+        position: relative;
+        left: 5px;
+        top: -42px;
+    }
+    .sliders h1 {
+        color: #fff;
+        font-size: 28px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5;
+        top: -181px;
+        left: -57px;
+        text-align: left;
+        position: relative;
+    }
+    .slider-wrapper {
+        width: 1408px;
+        /* height: 485px; */
+        left: -176px;
+        top: -186px;
+        position: relative;
+        margin-left: 140px;
+    }
+    .section-heading {
+        color: #fff;
+        font-size: 28px;
+        font-weight: normal;
+        text-align: center;
+        font-family: 'Poppins';
+        margin-bottom: 30px;
+        left: -57px;
+        top: -347px;
+        position: relative;
+    }
+    
 } 

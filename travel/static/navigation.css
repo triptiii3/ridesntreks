@@ -513,13 +513,14 @@ li:hover ul.swingLft.hov {
 
 /* A non image based mobile menu and close button */
 #hamburger {
-    display: none;
+	display: none;
     width: 25px;
     height: 24px;
     position: fixed;
-    right: 1159px;
-    top: 15px;
+    right: 1196px;
+    top: 24px;
     cursor: pointer;
+
 }
 
 #hamburger > span {
