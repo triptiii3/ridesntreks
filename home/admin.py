@@ -6,7 +6,7 @@ from home.models import *
 # Register your models here.
 admin.site.register(destinations)
 admin.site.register(Contact)
-
+admin.site.register(firsts)
 admin.site.register(bikingtrip)
 admin.site.register(roadtrip)
 admin.site.register(backpackingtrip)
