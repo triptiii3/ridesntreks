@@ -1,0 +1,249 @@
+* {
+	box-sizing: border-box;
+    padding: none;
+    
+    
+}
+.aboutuscontent{
+  font-family: 'Montserrat';
+  font-size: 18px;
+  line-height: 2;
+  position: relative;
+  height: 600px;
+  width: 1000px;
+  left: 100px;
+  top: -50px;
+  color: #fff;
+}
+body{
+height: 704px;
+background: #000;
+color: #fff;
+}
+
+*::-webkit-scrollbar {
+    width: 14px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #7a7a7a;
+    border-radius: 15px;
+    border: 3px solid #ffffff;
+  }
+body{
+    overflow-x: hidden;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+   
+    background: url(./images/bg\ \(2\).png) no-repeat center center;
+    
+    top: -95px;
+    height: 485px;
+    position: relative;
+
+}
+.destination-head{
+  font-size: 50px;
+  position: relative;
+  font-family: 'Poppins';
+  align-items: center;
+  text-align: center;
+  top: 270px;
+  color: #ccc;
+}
+
+.explore-dest{
+  font-size: 30px;
+  position: relative;
+  align-items: center;
+  text-align: center;
+  top: 11px;
+  font-weight: 200;
+  color: #373737;
+  font-family: 'Poppins';
+}
+.container-search {
+  height: 17vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 186px;
+}
+
+
+.footer {
+  background-color: #333;
+   margin-top: 3rem;
+  padding: 1rem 0;
+  width: 100%;
+  top: 171px;
+}
+
+.footer-text {
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+}
+footer{
+  background-color: #303030;
+ 
+  position: relative;
+}
+.footer-col{
+  padding: 10px 50px;
+  position: relative;
+  left: -139px;
+}
+
+.contact-info{
+  padding: 10px;
+  position: relative;
+  left: -139px;
+}
+
+.col-heading{
+  font-size: 20px;
+  font-family: 'Poppins';
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.about-us-para{
+  width: 230px;
+  font-size: 15px;
+  font-family: 'Montserrat';
+  color: #fff;
+  font-weight: 400;
+  line-height: 25px;
+  margin-bottom: 50px;
+  position: relative;
+  bottom: 9px;
+}
+.icons{
+  height: 50px;
+  width: 50px;
+  color: #fff;
+  position: relative;
+
+}
+.icon{
+  height: 50px;
+  width: 50px;
+  color: #fff;
+ 
+}
+.links{
+  text-decoration: none;
+  width: 180px;
+  font-size: 15px;
+  font-family: 'Montserrat';
+  color: #fff;
+  font-weight: 400;
+  line-height: 60px;
+  list-style: none;
+  
+}
+.link-head{
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+ 
+  
+  padding: 16px 0px;
+  bottom: 20px;
+
+}
+.contacts{
+text-decoration: none;
+list-style: none;
+}
+.mail{
+  color: #ccc;
+  position: relative;
+ display: inline-flex;
+  text-decoration: none;
+
+}
+.phone{
+  color: #ccc;
+  position: relative;
+ 
+  text-decoration: none;
+}
+.rights{
+  background-color: rgb(0, 0, 0);
+  width: 1540px;
+  height: 81px;
+  position: relative;
+  
+  color: #fff;
+  font-family: 'Montserrat';
+  text-align: center;
+  padding: 33px;
+  
+}
+.right{
+  font-size: 18px;
+}
+.footerlogo{
+  height: 28px;
+  width: 103px;
+  position: relative;
+  bottom: 44px;
+}
+.trip-name{
+  position: relative;
+  font-size: 40px;
+  font-family: 'Poppins';
+  color: #373737;
+}
+footer{
+  background-color: #303030;
+  
+  position: relative;
+  width: 1565px;
+
+}
+.whatsapp_float {
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+        font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+        z-index:1000;
+}
+
+.whatsapp-icon {
+	margin-top:16px;
+}
+/* for mobile */
+@media screen and (max-width: 767px){
+     .whatsapp-icon {
+	 margin-top:10px;
+     }
+    .whatsapp_float {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        right: 10px;
+        font-size: 22px;
+    }
+}
