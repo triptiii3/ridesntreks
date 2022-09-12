@@ -36,6 +36,8 @@ urlpatterns = [
     path('himachaltours', himachaltours ,name="himachaltours"),
     path('treks', treks ,name="treks"),
     path('checkout', checkout ,name="checkout"),
+    path('privacy', privacy ,name="privacy"),
+    path('aboutus', aboutus ,name="aboutus"),
 
     path('backpackingtours', backpackingtours ,name="backpackingtours"),
     path('weekendtours', weekendtours ,name="weekendtours"),

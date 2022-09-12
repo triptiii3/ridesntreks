@@ -34,6 +34,10 @@ def checkout(request):
     return render(request, 'checkout.html',data)
 def navigation(request):
     return render(request, 'navigation.html')
+def privacy(request):
+    return render(request, 'privacy.html')
+def aboutus(request):
+    return render(request, 'aboutus.html')
 def contactus(request):
     if request.method=="POST":
         name=request.POST['name']
