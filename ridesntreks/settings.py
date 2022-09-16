@@ -132,9 +132,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, "static")
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-AWS_ACCESS_KEY_ID='AKIATHEAAY5KWBY7BQGQ'
-AWS_SECRET_ACCESS_KEY='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'
-AWS_STORAGE_BUCKET_NAME='ridesimages'
+AWS_ACCESS_KEY_ID='AKIA5W5P65M35TR4IIUX'
+AWS_SECRET_ACCESS_KEY='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'
+AWS_STORAGE_BUCKET_NAME='ridesntreksimg'
 AWS_QUERYSTRING_AUTH=False
 
 # Default primary key field type
