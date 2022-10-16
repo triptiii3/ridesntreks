@@ -83,10 +83,10 @@ WSGI_APPLICATION = 'ridesntreks.wsgi.application'
 DATABASES = {
     'default': {
        'ENGINE': 'django.db.backends.postgresql',
-       'NAME': 'd4l63q8i9tld90',
-       'USER': 'ljhqrzssqmsuqv',
-       'PASSWORD': '830cab07e396f6bc46f5d26c22c1b61a24b99167257f72e46d7fdb4266cc445e',
-       'HOST': 'ec2-107-23-76-12.compute-1.amazonaws.com',
+       'NAME': 'dcpmof96opuk80',
+       'USER': 'nyugxhvisqqqaj',
+       'PASSWORD': 'c016123baeed718778a512c1ce74e980b090a4517c74a19356f432c63ff2928c',
+       'HOST': 'ec2-52-73-155-171.compute-1.amazonaws.com',
        'PORT': '5432',
    }
 }
