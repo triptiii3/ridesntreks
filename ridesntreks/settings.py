@@ -27,9 +27,7 @@ SECRET_KEY = 'django-insecure-x9$4d0ohiizhn4bp#fl^qiqz^jmajgavyej*kg+i%wr=c@z@24
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0',
-    'ridesntreks.herokuapp.com', # your herokuapp url
-    '127.0.0.1']
+ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
 
 
 # Application definition
@@ -82,13 +80,9 @@ WSGI_APPLICATION = 'ridesntreks.wsgi.application'
 
 DATABASES = {
     'default': {
-       'ENGINE': 'django.db.backends.postgresql',
-       'NAME': 'dcpmof96opuk80',
-       'USER': 'nyugxhvisqqqaj',
-       'PASSWORD': 'c016123baeed718778a512c1ce74e980b090a4517c74a19356f432c63ff2928c',
-       'HOST': 'ec2-52-73-155-171.compute-1.amazonaws.com',
-       'PORT': '5432',
-   }
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
 }
 
 # Password validation
